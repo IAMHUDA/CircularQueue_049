@@ -19,7 +19,7 @@ public:
 		//cek apakah antrian penuh
 		if ((FRONT == 0 && REAR == max - 1) || (FRONT == REAR + 1)) {
 			cout << "\nqueue overflow\n";
-			return 0;
+			return;
 		}
 
 		//cek apakah antrian kosong 
@@ -70,5 +70,17 @@ public:
 		}
 		cout << "\nelement in the queue are : \n";
 
+		//jika front position <= rear position ,iterasi dari front hingga rear
+		if (FRONT_position <= REAR_position) {
+			while (FRONT_position <= REAR_position) {
+				cout << queue_array[FRONT_position] << "   ";
+				FRONT_position++;
+			}
+			cout << endl;
+		}
+
+		else {
+			//jika front position >rear position , iterasi dari front hingga akhir array 
+		}
 	}
 }; 
