@@ -64,6 +64,11 @@ public:
 		int REAR_position = REAR;
 
 		//cek apakah antrian kosong 
-		if ()
+		if (FRONT == -1) {
+			cout << "Queues is empty \n";
+			return;
+		}
+		cout << "\nelement in the queue are : \n";
+
 	}
 }; 
